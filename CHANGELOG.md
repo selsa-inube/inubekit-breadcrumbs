@@ -1,3 +1,24 @@
+# v0.0.2 (Fri Feb 09 2024)
+
+#### 🐛 Bug Fix
+
+- implementation of  `<Breadcrumbs />` component [#1](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/1) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### ⚠️ Pushed to `main`
+
+- refactor: remove unnecessary code (carlos3k11@gmail.com)
+- refactor: organize imports (carlos3k11@gmail.com)
+- refactor: remove unused dependencies (carlos3k11@gmail.com)
+- Initial commit ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 3
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Andres Babativa (carlos3k11@gmail.com)
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.1 (Wed Jan 17 2024)
 
 #### ⚠️ Pushed to `main`
