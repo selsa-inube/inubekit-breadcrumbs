@@ -16,7 +16,7 @@ export const BreadcrumbMenuLink = (props: IRoute) => {
             size={size}
             appearance="gray"
             padding="8px 12px"
-            textAlign={"center"}
+            textAlign="start"
           >
             {label}
           </Text>

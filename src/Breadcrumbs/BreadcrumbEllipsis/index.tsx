@@ -46,7 +46,7 @@ export const BreadcrumbEllipsis = (props: IBreadcrumbEllipsisProps) => {
   return (
     <StyledRelativeContainer ref={containerRef} onClick={toggleEllipsisMenu}>
       <StyledContainerEllipsis>
-        <Text type="label" size={size} appearance="dark" textAlign={"start"}>
+        <Text type="label" size={size} appearance="dark" textAlign="start">
           <StyledBreadcrumbEllipsis>...</StyledBreadcrumbEllipsis>
         </Text>
       </StyledContainerEllipsis>

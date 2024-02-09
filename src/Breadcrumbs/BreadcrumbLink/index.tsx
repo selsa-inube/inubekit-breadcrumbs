@@ -29,7 +29,7 @@ export const BreadcrumbLink = (props: IBreadcrumbLinkProps) => {
           type="label"
           size={size}
           appearance={appearance}
-          textAlign={"start"}
+          textAlign="start"
         >
           {label}
         </Text>

@@ -3,7 +3,7 @@ import { inube } from "@inubekit/foundations";
 
 export const StyledBreadcrumbMenu = styled.div`
   position: absolute;
-  width: fit-content;
+  width: max-content;
   max-width: 160px;
   min-width: 100px;
   box-shadow: ${({ theme }) =>
