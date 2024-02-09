@@ -1,8 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
-import { Breadcrumbs, IBreadcrumbsProps } from "..";
-import { props } from "../props";
-import { presente } from "@inubekit/foundations";
 import { ThemeProvider } from "styled-components";
+import { presente } from "@inubekit/foundations";
+
+import { props } from "../props";
+import { Breadcrumbs, IBreadcrumbsProps } from "..";
 
 const story = {
   title: "navigation/Breadcrumbs",

@@ -1,7 +1,7 @@
 import { Text } from "@inubekit/text";
 
-import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
 import { Appearance, Sizes } from "./props";
+import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
 
 export interface IBreadcrumbLinkProps {
   label: string;

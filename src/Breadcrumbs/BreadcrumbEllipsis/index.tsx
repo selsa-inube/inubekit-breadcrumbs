@@ -3,13 +3,14 @@ import { useState, useEffect, useRef } from "react";
 import { Text } from "@inubekit/text";
 import { BreadcrumbMenu } from "../BreadcrumbMenu";
 
+import { IBreadcrumbsRoutes } from "../props";
+
 import { Typos } from "./props";
 import {
   StyledContainerEllipsis,
   StyledBreadcrumbEllipsis,
   StyledRelativeContainer,
 } from "./styles";
-import { IBreadcrumbsRoutes } from "../props";
 
 export interface IBreadcrumbEllipsisProps extends IBreadcrumbsRoutes {
   size?: Typos;
