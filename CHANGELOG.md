@@ -1,3 +1,15 @@
+# v1.2.1 (Mon Feb 12 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: correct the path of the type definition (carlos3k11@gmail.com)
+
+#### Authors: 1
+
+- Andres Babativa (carlos3k11@gmail.com)
+
+---
+
 # v1.0.1 (Mon Feb 12 2024)
 
 #### 🐛 Bug Fix
