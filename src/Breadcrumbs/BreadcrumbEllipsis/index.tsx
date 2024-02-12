@@ -3,13 +3,14 @@ import { useState, useEffect, useRef } from "react";
 import { Text } from "@inubekit/text";
 import { BreadcrumbMenu } from "../BreadcrumbMenu";
 
+import { IBreadcrumbsRoutes } from "../props";
+
 import { Typos } from "./props";
 import {
   StyledContainerEllipsis,
   StyledBreadcrumbEllipsis,
   StyledRelativeContainer,
 } from "./styles";
-import { IBreadcrumbsRoutes } from "../props";
 
 export interface IBreadcrumbEllipsisProps extends IBreadcrumbsRoutes {
   size?: Typos;
@@ -45,7 +46,7 @@ export const BreadcrumbEllipsis = (props: IBreadcrumbEllipsisProps) => {
   return (
     <StyledRelativeContainer ref={containerRef} onClick={toggleEllipsisMenu}>
       <StyledContainerEllipsis>
-        <Text type="label" size={size} appearance="dark" textAlign={"start"}>
+        <Text type="label" size={size} appearance="dark" textAlign="start">
           <StyledBreadcrumbEllipsis>...</StyledBreadcrumbEllipsis>
         </Text>
       </StyledContainerEllipsis>

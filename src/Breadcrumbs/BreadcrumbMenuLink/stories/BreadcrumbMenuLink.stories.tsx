@@ -1,8 +1,9 @@
 import { BrowserRouter } from "react-router-dom";
-import { presente } from "@inubekit/foundations";
 import { ThemeProvider } from "styled-components";
-import { props } from "../props";
+import { presente } from "@inubekit/foundations";
+
 import { IRoute } from "../../props";
+import { props } from "../props";
 import { BreadcrumbMenuLink } from "..";
 
 const story = {

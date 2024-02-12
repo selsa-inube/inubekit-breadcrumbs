@@ -1,7 +1,7 @@
 import { Text } from "@inubekit/text";
 
-import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
 import { Appearance, Sizes } from "./props";
+import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
 
 export interface IBreadcrumbLinkProps {
   label: string;
@@ -29,7 +29,7 @@ export const BreadcrumbLink = (props: IBreadcrumbLinkProps) => {
           type="label"
           size={size}
           appearance={appearance}
-          textAlign={"start"}
+          textAlign="start"
         >
           {label}
         </Text>
