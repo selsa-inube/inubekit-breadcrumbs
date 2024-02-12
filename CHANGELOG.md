@@ -1,3 +1,17 @@
+# v1.0.1 (Mon Feb 12 2024)
+
+#### 🐛 Bug Fix
+
+- exporting the other added components of `<Breadcrumb >` [#3](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/3) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- Publish Breadcrumbs package [#2](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/2) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 2
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v0.0.2 (Fri Feb 09 2024)
 
 #### 🐛 Bug Fix
