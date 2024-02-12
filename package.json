@@ -10,7 +10,7 @@
   ],
   "description": "",
   "private": false,
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "exports": {
     ".": {
@@ -19,7 +19,7 @@
   },
   "files": [
     "dist/index.es.js",
-    "dist/index/es.d.ts"
+    "dist/index.es.d.ts"
   ],
   "scripts": {
     "dev": "vite",
