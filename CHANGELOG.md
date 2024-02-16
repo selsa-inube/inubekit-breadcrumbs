@@ -1,3 +1,23 @@
+# v1.2.2 (Fri Feb 16 2024)
+
+#### 🐛 Bug Fix
+
+- Adjust dependencies and peerDependencies [#5](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/5) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- correct definition of types [#4](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/4) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### ⚠️ Pushed to `main`
+
+- feat: adjust the dependencies of the distributable (carlos3k11@gmail.com)
+- feat: adjust components to be exported publicly (carlos3k11@gmail.com)
+
+#### Authors: 3
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Andres Babativa (carlos3k11@gmail.com)
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v1.2.1 (Mon Feb 12 2024)
 
 #### ⚠️ Pushed to `main`
