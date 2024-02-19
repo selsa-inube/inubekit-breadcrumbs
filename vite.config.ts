@@ -14,10 +14,12 @@ export default defineConfig({
     rollupOptions: {
       external: [
         "react",
+        "react-dom",
         "styled-components",
         "@inubekit/hooks",
         "@inubekit/foundations",
         "react/jsx-runtime",
+        "react-router-dom",
         "@inubekit/stack",
         "@inubekit/text",
       ],
