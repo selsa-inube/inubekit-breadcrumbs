@@ -3,17 +3,17 @@ import { Stack } from "@inubekit/stack";
 import { BreadcrumbMenuLink } from "../BreadcrumbMenuLink";
 import { StyledBreadcrumbMenu } from "./styles";
 
-export interface IBreadcrumbRoute {
+interface IBreadcrumbRoute {
   id: string;
   path: string;
   label: string;
 }
 
-export interface IBreadcrumbMenuProps {
+interface IBreadcrumbMenu {
   routes: IBreadcrumbRoute[];
 }
 
-export const BreadcrumbMenu = (props: IBreadcrumbMenuProps) => {
+const BreadcrumbMenu = (props: IBreadcrumbMenu) => {
   const { routes } = props;
 
   return (
@@ -31,3 +31,6 @@ export const BreadcrumbMenu = (props: IBreadcrumbMenuProps) => {
     </StyledBreadcrumbMenu>
   );
 };
+
+export { BreadcrumbMenu };
+export type { IBreadcrumbMenu };

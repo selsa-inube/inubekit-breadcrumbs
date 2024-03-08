@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-export const StyledContainerEllipsis = styled.li`
+const StyledContainerEllipsis = styled.li`
   display: inline-block;
 `;
 
-export const StyledBreadcrumbEllipsis = styled.span`
+const StyledBreadcrumbEllipsis = styled.span`
   user-select: none;
   text-decoration: none;
   color: ${({ theme }) =>
@@ -18,7 +18,13 @@ export const StyledBreadcrumbEllipsis = styled.span`
   }
 `;
 
-export const StyledRelativeContainer = styled.div`
+const StyledRelativeContainer = styled.div`
   position: relative;
   display: inline-block;
 `;
+
+export {
+  StyledContainerEllipsis,
+  StyledBreadcrumbEllipsis,
+  StyledRelativeContainer,
+};

@@ -1,7 +1,7 @@
-export const sizes = ["large", "small"] as const;
-export type Typos = (typeof sizes)[number];
+const sizes = ["large", "small"] as const;
+type Typos = (typeof sizes)[number];
 
-export const props = {
+const props = {
   parameters: {
     docs: {
       description: {
@@ -33,3 +33,6 @@ export const props = {
     },
   },
 };
+
+export { props, sizes };
+export type { Typos };

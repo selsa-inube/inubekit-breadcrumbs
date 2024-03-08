@@ -3,16 +3,16 @@ import { Text } from "@inubekit/text";
 import { Appearance, Sizes } from "./props";
 import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
 
-export interface IBreadcrumbLinkProps {
+interface IBreadcrumbLink {
   label: string;
   path: string;
   id: string;
   size?: Sizes;
   appearance?: Appearance;
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent) => void;
 }
 
-export const BreadcrumbLink = (props: IBreadcrumbLinkProps) => {
+const BreadcrumbLink = (props: IBreadcrumbLink) => {
   const {
     label,
     path,
@@ -22,8 +22,20 @@ export const BreadcrumbLink = (props: IBreadcrumbLinkProps) => {
     onClick,
   } = props;
 
+  const interceptOnClick = (e: React.MouseEvent) => {
+    try {
+      onClick && onClick(e);
+    } catch (error) {
+      if (error instanceof Error) {
+        throw new Error(error.message);
+      } else {
+        throw new Error("An unknown error occurred");
+      }
+    }
+  };
+
   return (
-    <StyledContainerLink id={id} onClick={onClick}>
+    <StyledContainerLink id={id} onClick={interceptOnClick}>
       <StyledBreadcrumbLink to={path}>
         <Text
           type="label"
@@ -37,3 +49,6 @@ export const BreadcrumbLink = (props: IBreadcrumbLinkProps) => {
     </StyledContainerLink>
   );
 };
+
+export { BreadcrumbLink };
+export type { IBreadcrumbLink };

@@ -3,7 +3,7 @@ import { action } from "@storybook/addon-actions";
 import { ThemeProvider } from "styled-components";
 import { presente } from "@inubekit/foundations";
 import { props } from "../props";
-import { BreadcrumbLink, IBreadcrumbLinkProps } from "..";
+import { BreadcrumbLink, IBreadcrumbLink } from "..";
 
 const story = {
   title: "navigation/Breadcrumbs/BreadcrumbLink",
@@ -18,9 +18,7 @@ const story = {
   ],
 };
 
-export const Default = (args: IBreadcrumbLinkProps) => (
-  <BreadcrumbLink {...args} />
-);
+const Default = (args: IBreadcrumbLink) => <BreadcrumbLink {...args} />;
 Default.args = {
   label: "Privileges",
   path: "/privileges",
@@ -31,7 +29,7 @@ Default.args = {
 
 const theme = structuredClone(presente);
 
-export const Themed = (args: IBreadcrumbLinkProps) => (
+const Themed = (args: IBreadcrumbLink) => (
   <ThemeProvider theme={theme}>
     <BreadcrumbLink {...args} />
   </ThemeProvider>
@@ -40,4 +38,5 @@ Themed.args = {
   ...Default.args,
 };
 
+export { Default, Themed };
 export default story;

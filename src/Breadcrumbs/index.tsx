@@ -5,7 +5,7 @@ import { BreadcrumbEllipsis } from "./BreadcrumbEllipsis";
 import { IRoute } from "./props";
 import { StyledBreadcrumbs } from "./styles";
 
-export interface IBreadcrumbsProps {
+interface IBreadcrumbs {
   crumbs: IRoute[];
 }
 
@@ -13,7 +13,7 @@ function capitalizeString(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-export const Breadcrumbs = (props: IBreadcrumbsProps) => {
+const Breadcrumbs = (props: IBreadcrumbs) => {
   const { crumbs } = props;
 
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -59,3 +59,6 @@ export const Breadcrumbs = (props: IBreadcrumbsProps) => {
     </StyledBreadcrumbs>
   );
 };
+
+export { Breadcrumbs };
+export type { IBreadcrumbs };

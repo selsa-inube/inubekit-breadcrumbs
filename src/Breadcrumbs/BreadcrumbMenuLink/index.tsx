@@ -4,7 +4,7 @@ import { Text } from "@inubekit/text";
 import { IRoute } from "../props";
 import { StyledContainerLink, StyledBreadcrumbMenuLink } from "./styles";
 
-export const BreadcrumbMenuLink = (props: IRoute) => {
+const BreadcrumbMenuLink = (props: IRoute) => {
   const { label, path, id, size = "large" } = props;
 
   return (
@@ -25,3 +25,5 @@ export const BreadcrumbMenuLink = (props: IRoute) => {
     </StyledBreadcrumbMenuLink>
   );
 };
+
+export { BreadcrumbMenuLink };

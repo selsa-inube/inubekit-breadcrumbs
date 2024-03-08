@@ -12,11 +12,11 @@ import {
   StyledRelativeContainer,
 } from "./styles";
 
-export interface IBreadcrumbEllipsisProps extends IBreadcrumbsRoutes {
+interface IBreadcrumbEllipsis extends IBreadcrumbsRoutes {
   size?: Typos;
 }
 
-export const BreadcrumbEllipsis = (props: IBreadcrumbEllipsisProps) => {
+const BreadcrumbEllipsis = (props: IBreadcrumbEllipsis) => {
   const { size = "large", routes } = props;
   const [showMenu, setShowMenu] = useState(false);
 
@@ -54,3 +54,6 @@ export const BreadcrumbEllipsis = (props: IBreadcrumbEllipsisProps) => {
     </StyledRelativeContainer>
   );
 };
+
+export { BreadcrumbEllipsis };
+export type { IBreadcrumbEllipsis };

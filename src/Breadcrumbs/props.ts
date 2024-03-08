@@ -1,7 +1,7 @@
-export const sizes = ["large", "small"] as const;
-export type Sizes = (typeof sizes)[number];
+const sizes = ["large", "small"] as const;
+type Sizes = (typeof sizes)[number];
 
-export interface IRoute {
+interface IRoute {
   path: string;
   label: string;
   id: string;
@@ -9,11 +9,11 @@ export interface IRoute {
   size?: Sizes;
 }
 
-export interface IBreadcrumbsRoutes {
+interface IBreadcrumbsRoutes {
   routes: IRoute[];
 }
 
-export const props = {
+const props = {
   parameters: {
     docs: {
       description: {
@@ -27,3 +27,6 @@ export const props = {
       "An array of objects that contain the path, label, id, and isActive properties.",
   },
 };
+
+export { props, sizes };
+export type { IBreadcrumbsRoutes, IRoute, Sizes };
