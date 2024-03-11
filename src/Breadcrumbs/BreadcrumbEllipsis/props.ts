@@ -1,5 +1,5 @@
 const sizes = ["large", "small"] as const;
-type Typos = (typeof sizes)[number];
+type Size = (typeof sizes)[number];
 
 const props = {
   parameters: {
@@ -35,4 +35,4 @@ const props = {
 };
 
 export { props, sizes };
-export type { Typos };
+export type { Size };
