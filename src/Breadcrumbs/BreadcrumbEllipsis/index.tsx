@@ -5,18 +5,18 @@ import { BreadcrumbMenu } from "../BreadcrumbMenu";
 
 import { IBreadcrumbsRoutes } from "../props";
 
-import { Typos } from "./props";
+import { Size } from "./props";
 import {
   StyledContainerEllipsis,
   StyledBreadcrumbEllipsis,
   StyledRelativeContainer,
 } from "./styles";
 
-export interface IBreadcrumbEllipsisProps extends IBreadcrumbsRoutes {
-  size?: Typos;
+interface IBreadcrumbEllipsis extends IBreadcrumbsRoutes {
+  size?: Size;
 }
 
-export const BreadcrumbEllipsis = (props: IBreadcrumbEllipsisProps) => {
+const BreadcrumbEllipsis = (props: IBreadcrumbEllipsis) => {
   const { size = "large", routes } = props;
   const [showMenu, setShowMenu] = useState(false);
 
@@ -54,3 +54,6 @@ export const BreadcrumbEllipsis = (props: IBreadcrumbEllipsisProps) => {
     </StyledRelativeContainer>
   );
 };
+
+export { BreadcrumbEllipsis };
+export type { IBreadcrumbEllipsis };

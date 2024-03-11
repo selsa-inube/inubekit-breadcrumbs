@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { presente } from "@inubekit/foundations";
 
 import { props } from "../props";
-import { Breadcrumbs, IBreadcrumbsProps } from "..";
+import { Breadcrumbs, IBreadcrumbs } from "..";
 
 const story = {
   title: "navigation/Breadcrumbs",
@@ -18,7 +18,7 @@ const story = {
   ],
 };
 
-export const Default = (args: IBreadcrumbsProps) => <Breadcrumbs {...args} />;
+export const Default = (args: IBreadcrumbs) => <Breadcrumbs {...args} />;
 Default.args = {
   crumbs: [
     {
@@ -62,7 +62,7 @@ Default.args = {
 
 const theme = structuredClone(presente);
 
-export const Themed = (args: IBreadcrumbsProps) => (
+export const Themed = (args: IBreadcrumbs) => (
   <ThemeProvider theme={theme}>
     <Default {...args} />
   </ThemeProvider>

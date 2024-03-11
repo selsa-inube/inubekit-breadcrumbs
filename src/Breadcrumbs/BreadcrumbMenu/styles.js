@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-export const StyledBreadcrumbMenu = styled.div`
+const StyledBreadcrumbMenu = styled.div`
   position: absolute;
   width: max-content;
   max-width: 160px;
@@ -26,3 +26,5 @@ export const StyledBreadcrumbMenu = styled.div`
     }
   }
 `;
+
+export { StyledBreadcrumbMenu };

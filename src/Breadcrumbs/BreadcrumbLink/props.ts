@@ -1,9 +1,9 @@
 import { inube } from "@inubekit/foundations";
 
-export type Sizes = "large" | "medium" | "small";
-export type Appearance = keyof typeof inube.color.text;
+type Sizes = "large" | "medium" | "small";
+type Appearance = keyof typeof inube.color.text;
 
-export const parameters = {
+const parameters = {
   docs: {
     description: {
       component:
@@ -12,7 +12,7 @@ export const parameters = {
   },
 };
 
-export const props = {
+const props = {
   id: {
     description: "shall be the id for the text",
   },
@@ -36,3 +36,6 @@ export const props = {
     description: "is the path where the BreadcrumbLink is going to navigate",
   },
 };
+
+export { parameters, props };
+export type { Appearance, Sizes };

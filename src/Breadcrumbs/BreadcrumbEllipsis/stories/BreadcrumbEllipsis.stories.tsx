@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { presente } from "@inubekit/foundations";
 
 import { props } from "../props";
-import { BreadcrumbEllipsis, IBreadcrumbEllipsisProps } from "../index";
+import { BreadcrumbEllipsis, IBreadcrumbEllipsis } from "../index";
 
 const story = {
   title: "navigation/Breadcrumbs/BreadcrumbEllipsis",
@@ -18,9 +18,7 @@ const story = {
   ],
 };
 
-export const Default = (args: IBreadcrumbEllipsisProps) => (
-  <BreadcrumbEllipsis {...args} />
-);
+const Default = (args: IBreadcrumbEllipsis) => <BreadcrumbEllipsis {...args} />;
 Default.args = {
   routes: [
     {
@@ -40,7 +38,7 @@ Default.args = {
 
 const theme = structuredClone(presente);
 
-export const Themed = (args: IBreadcrumbEllipsisProps) => (
+const Themed = (args: IBreadcrumbEllipsis) => (
   <ThemeProvider theme={theme}>
     <Default {...args} />
   </ThemeProvider>
@@ -50,4 +48,5 @@ Themed.args = {
   ...Default.args,
 };
 
+export { Default, Themed };
 export default story;

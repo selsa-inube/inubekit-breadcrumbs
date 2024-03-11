@@ -19,7 +19,7 @@ const story = {
   ],
 };
 
-export const Default = (args: IBreadcrumbsRoutes) => (
+const Default = (args: IBreadcrumbsRoutes) => (
   <div style={{ height: "100px", transform: "translateZ(0)" }}>
     <BreadcrumbMenu {...args} />
   </div>
@@ -42,7 +42,7 @@ Default.args = {
 
 const theme = structuredClone(presente);
 
-export const Themed = (args: IBreadcrumbsRoutes) => (
+const Themed = (args: IBreadcrumbsRoutes) => (
   <ThemeProvider theme={theme}>
     <Default {...args} />
   </ThemeProvider>
@@ -52,4 +52,5 @@ Themed.args = {
   ...Default.args,
 };
 
+export { Default, Themed };
 export default story;

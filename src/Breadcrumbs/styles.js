@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
-export const StyledBreadcrumbs = styled.ul`
+const StyledBreadcrumbs = styled.ul`
   padding: ${({ theme }) => `${theme?.spacing?.s0 || inube.spacing.s0} `};
   margin: ${({ theme }) => `${theme?.spacing?.s0 || inube.spacing.s0} `};
   & > li {
@@ -20,3 +20,5 @@ export const StyledBreadcrumbs = styled.ul`
     display: inherit;
   }
 `;
+
+export { StyledBreadcrumbs };

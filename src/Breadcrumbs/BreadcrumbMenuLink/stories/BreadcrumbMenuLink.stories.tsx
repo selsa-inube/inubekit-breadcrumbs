@@ -19,7 +19,7 @@ const story = {
   ],
 };
 
-export const Default = (args: IRoute) => <BreadcrumbMenuLink {...args} />;
+const Default = (args: IRoute) => <BreadcrumbMenuLink {...args} />;
 Default.args = {
   label: "Privileges",
   path: "/privileges",
@@ -29,7 +29,7 @@ Default.args = {
 
 const theme = structuredClone(presente);
 
-export const Themed = (args: IRoute) => (
+const Themed = (args: IRoute) => (
   <ThemeProvider theme={theme}>
     <Default {...args} />
   </ThemeProvider>
@@ -39,4 +39,5 @@ Themed.args = {
   ...Default.args,
 };
 
+export { Default, Themed };
 export default story;

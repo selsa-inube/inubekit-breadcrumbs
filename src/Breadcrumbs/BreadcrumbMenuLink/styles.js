@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { inube } from "@inubekit/foundations";
 
-export const StyledContainerLink = styled.li`
+const StyledContainerLink = styled.li`
   display: inline-block;
   > * {
     height: 32px;
@@ -19,8 +19,10 @@ export const StyledContainerLink = styled.li`
   }
 `;
 
-export const StyledBreadcrumbMenuLink = styled(Link)`
+const StyledBreadcrumbMenuLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) =>
     theme?.color?.text?.gray?.regular || inube.color.text.gray.regular};
 `;
+
+export { StyledContainerLink, StyledBreadcrumbMenuLink };

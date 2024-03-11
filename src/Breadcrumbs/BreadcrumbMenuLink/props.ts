@@ -1,4 +1,4 @@
-export const props = {
+const props = {
   parameters: {
     docs: {
       description: {
@@ -25,3 +25,5 @@ export const props = {
     description: "is the path where the BreadcrumbLink is going to navigate",
   },
 };
+
+export { props };

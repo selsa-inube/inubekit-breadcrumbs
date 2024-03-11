@@ -1,4 +1,4 @@
-export const props = {
+const props = {
   parameters: {
     docs: {
       description: {
@@ -20,3 +20,5 @@ export const props = {
     },
   },
 };
+
+export { props };
