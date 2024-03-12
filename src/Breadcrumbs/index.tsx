@@ -4,6 +4,8 @@ import { BreadcrumbLink } from "./BreadcrumbLink";
 import { BreadcrumbEllipsis } from "./BreadcrumbEllipsis";
 import { IRoute } from "./props";
 import { StyledBreadcrumbs } from "./styles";
+import { inube } from "@inubekit/foundations";
+import { Appearance } from "./BreadcrumbLink/props";
 
 interface IBreadcrumbs {
   crumbs: IRoute[];
@@ -39,7 +41,7 @@ const Breadcrumbs = (props: IBreadcrumbs) => {
           path={lastCrumb.path}
           id={lastCrumb.path}
           label={capitalizeString(lastCrumb.label)}
-          appearance="dark"
+          appearance={inube.breadcrumbs.content.appearance.active as Appearance}
         />
       </StyledBreadcrumbs>
     );
@@ -53,7 +55,11 @@ const Breadcrumbs = (props: IBreadcrumbs) => {
           path={path}
           id={path}
           label={capitalizeString(label)}
-          appearance={index === crumbs.length - 1 ? "dark" : "gray"}
+          appearance={
+            index === crumbs.length - 1
+              ? (inube.breadcrumbs.content.appearance.active as Appearance)
+              : "gray"
+          }
         />
       ))}
     </StyledBreadcrumbs>
