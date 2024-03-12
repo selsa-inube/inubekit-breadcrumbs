@@ -1,7 +1,16 @@
-import { inube } from "@inubekit/foundations";
-
 type Sizes = "large" | "medium" | "small";
-type Appearance = keyof typeof inube.color.text;
+const appearances = [
+  "primary",
+  "success",
+  "warning",
+  "danger",
+  "help",
+  "dark",
+  "gray",
+  "light",
+] as const;
+
+type Appearance = (typeof appearances)[number];
 
 const parameters = {
   docs: {

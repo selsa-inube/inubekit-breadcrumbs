@@ -1,7 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
 import { action } from "@storybook/addon-actions";
-import { ThemeProvider } from "styled-components";
-import { presente } from "@inubekit/foundations";
 import { props } from "../props";
 import { BreadcrumbLink, IBreadcrumbLink } from "..";
 
@@ -27,16 +25,5 @@ Default.args = {
   onClick: action("onClick"),
 };
 
-const theme = structuredClone(presente);
-
-const Themed = (args: IBreadcrumbLink) => (
-  <ThemeProvider theme={theme}>
-    <BreadcrumbLink {...args} />
-  </ThemeProvider>
-);
-Themed.args = {
-  ...Default.args,
-};
-
-export { Default, Themed };
+export { Default };
 export default story;

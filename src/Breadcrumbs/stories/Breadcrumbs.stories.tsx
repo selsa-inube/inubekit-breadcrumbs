@@ -1,6 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import { presente } from "@inubekit/foundations";
 
 import { props } from "../props";
 import { Breadcrumbs, IBreadcrumbs } from "..";
@@ -18,7 +16,7 @@ const story = {
   ],
 };
 
-export const Default = (args: IBreadcrumbs) => <Breadcrumbs {...args} />;
+const Default = (args: IBreadcrumbs) => <Breadcrumbs {...args} />;
 Default.args = {
   crumbs: [
     {
@@ -60,16 +58,5 @@ Default.args = {
   ],
 };
 
-const theme = structuredClone(presente);
-
-export const Themed = (args: IBreadcrumbs) => (
-  <ThemeProvider theme={theme}>
-    <Default {...args} />
-  </ThemeProvider>
-);
-
-Themed.args = {
-  ...Default.args,
-};
-
+export { Default };
 export default story;

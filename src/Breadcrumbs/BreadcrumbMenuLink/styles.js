@@ -9,12 +9,10 @@ const StyledContainerLink = styled.li`
     height: 32px;
     > label {
       color: ${({ theme }) =>
-        theme?.color?.text?.gray?.regular || inube.color.text.gray.regular};
+        theme?.text?.gray?.content?.color?.regular ||
+        inube.text.gray.content.color.regular};
       cursor: pointer;
-      padding: ${({ theme }) =>
-        `${theme?.spacing?.s100 || inube.spacing.s100} ${
-          theme?.spacing?.s150 || inube.spacing.s150
-        }`};
+      padding: 8px 12px;
     }
   }
 `;
@@ -22,7 +20,8 @@ const StyledContainerLink = styled.li`
 const StyledBreadcrumbMenuLink = styled(Link)`
   text-decoration: none;
   color: ${({ theme }) =>
-    theme?.color?.text?.gray?.regular || inube.color.text.gray.regular};
+    theme?.text?.gray?.content?.color?.regular ||
+    inube.text.gray.content.color.regular};
 `;
 
 export { StyledContainerLink, StyledBreadcrumbMenuLink };
