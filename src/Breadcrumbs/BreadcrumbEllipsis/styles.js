@@ -9,14 +9,12 @@ const StyledBreadcrumbEllipsis = styled.span`
   user-select: none;
   text-decoration: none;
   color: ${({ theme }) =>
-    theme?.text?.gray?.content?.color?.regular ||
-    inube.text.gray.content.color.regular};
+    theme?.palette?.neutral?.N300 || inube.palette.neutral.N300};
   &:hover {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: ${({ theme }) =>
-      theme?.text?.gray?.content?.color?.hover ||
-      inube.text.gray.content.color.hover};
+      theme?.palette?.neutral?.N300 || inube.palette.neutral.N300};
   }
 `;
 

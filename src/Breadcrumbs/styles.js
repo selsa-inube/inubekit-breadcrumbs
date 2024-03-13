@@ -12,6 +12,8 @@ const StyledBreadcrumbs = styled.ul`
     pointer-events: none;
     content: "/";
     margin: 0 8px;
+    color: ${({ theme }) =>
+      theme?.palette?.neutral?.N300 || inube.palette.neutral.N300};
   }
   & li > p {
     display: inherit;

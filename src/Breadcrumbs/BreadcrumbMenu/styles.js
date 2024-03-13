@@ -7,23 +7,10 @@ const StyledBreadcrumbMenu = styled.div`
   max-width: 160px;
   min-width: 100px;
   box-shadow: 0px 2px 4px
-    ${({ theme }) =>
-      `${
-        theme?.text?.light?.content?.color?.disabled ||
-        inube.text.light.content.color.disabled
-      }`};
+    ${({ theme }) => theme?.palette?.neutral?.N70 || inube.palette.neutral.N70};
   background-color: ${({ theme }) =>
-    theme?.text?.light?.content?.color?.hover ||
-    inube.text.light.content.color.hover};
+    theme?.palette?.neutral?.N0 || inube.palette.neutral.N0};
   border-radius: 4px;
-  a {
-    &:hover {
-      cursor: pointer;
-      background-color: ${({ theme }) =>
-        theme?.text?.light?.content?.color?.regular ||
-        inube.text.light.content.color.regular};
-    }
-  }
 `;
 
 export { StyledBreadcrumbMenu };

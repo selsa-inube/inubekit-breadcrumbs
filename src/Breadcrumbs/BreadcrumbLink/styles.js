@@ -5,6 +5,7 @@ import { inube } from "@inubekit/foundations";
 
 const StyledContainerLink = styled.li`
   display: inline-block;
+  align-items: center;
 `;
 
 const StyledBreadcrumbLink = styled(Link)`
@@ -12,8 +13,7 @@ const StyledBreadcrumbLink = styled(Link)`
   &:hover {
     text-decoration: underline;
     text-decoration-color: ${({ theme }) =>
-      theme?.text?.gray?.content?.color?.regular ||
-      inube.text.gray.content.color.regular};
+      theme?.palette?.neutral?.N300 || inube.palette.neutral.N300};
   }
 `;
 

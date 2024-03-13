@@ -1,16 +1,4 @@
-type Sizes = "large" | "medium" | "small";
-const appearances = [
-  "primary",
-  "success",
-  "warning",
-  "danger",
-  "help",
-  "dark",
-  "gray",
-  "light",
-] as const;
-
-type Appearance = (typeof appearances)[number];
+type Sizes = "large" | "small";
 
 const parameters = {
   docs: {
@@ -47,4 +35,4 @@ const props = {
 };
 
 export { parameters, props };
-export type { Appearance, Sizes };
+export type { Sizes };

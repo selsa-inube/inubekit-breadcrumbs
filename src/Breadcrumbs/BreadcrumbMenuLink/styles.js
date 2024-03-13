@@ -8,20 +8,17 @@ const StyledContainerLink = styled.li`
   > * {
     height: 32px;
     > label {
-      color: ${({ theme }) =>
-        theme?.text?.gray?.content?.color?.regular ||
-        inube.text.gray.content.color.regular};
-      cursor: pointer;
       padding: 8px 12px;
     }
   }
 `;
 
 const StyledBreadcrumbMenuLink = styled(Link)`
-  text-decoration: none;
-  color: ${({ theme }) =>
-    theme?.text?.gray?.content?.color?.regular ||
-    inube.text.gray.content.color.regular};
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) =>
+      theme?.palette?.neutral?.N10 || inube.palette.neutral.N10};
+  }
 `;
 
 export { StyledContainerLink, StyledBreadcrumbMenuLink };
