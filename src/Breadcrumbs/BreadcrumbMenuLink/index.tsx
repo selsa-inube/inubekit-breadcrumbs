@@ -1,4 +1,3 @@
-import { Stack } from "@inubekit/stack";
 import { Text } from "@inubekit/text";
 
 import { IRoute } from "../props";
@@ -10,17 +9,15 @@ const BreadcrumbMenuLink = (props: IRoute) => {
   return (
     <StyledBreadcrumbMenuLink to={path}>
       <StyledContainerLink id={id}>
-        <Stack alignItems="center">
-          <Text
-            type="label"
-            size={size}
-            appearance="gray"
-            padding="8px 12px"
-            textAlign="start"
-          >
-            {label}
-          </Text>
-        </Stack>
+        <Text
+          type="label"
+          size={size}
+          appearance="gray"
+          padding="8px 12px"
+          textAlign="start"
+        >
+          {label}
+        </Text>
       </StyledContainerLink>
     </StyledBreadcrumbMenuLink>
   );

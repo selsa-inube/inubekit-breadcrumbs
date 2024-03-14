@@ -6,7 +6,6 @@ import { inube } from "@inubekit/foundations";
 const StyledContainerLink = styled.li`
   display: inline-block;
   > * {
-    height: 32px;
     > label {
       padding: 8px 12px;
     }
