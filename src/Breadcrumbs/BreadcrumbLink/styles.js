@@ -12,8 +12,12 @@ const StyledBreadcrumbLink = styled(Link)`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    text-decoration-color: ${({ theme }) =>
-      theme?.palette?.neutral?.N300 || inube.palette.neutral.N300};
+    text-decoration-color: ${({ theme, $active }) =>
+      $active
+        ? theme?.text?.dark?.content?.color?.regular ||
+          inube.text.dark.content.color.regular
+        : theme?.text?.gray?.content?.color?.regular ||
+          inube.text.gray.content.color.regular};
   }
 `;
 

@@ -29,7 +29,7 @@ const BreadcrumbLink = (props: IBreadcrumbLink) => {
 
   return (
     <StyledContainerLink id={id} onClick={interceptOnClick}>
-      <StyledBreadcrumbLink to={path} $size={size}>
+      <StyledBreadcrumbLink to={path} $size={size} $active={active}>
         <Text
           type="label"
           size={size}
