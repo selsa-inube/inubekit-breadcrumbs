@@ -1,3 +1,27 @@
+# v2.0.0 (Mon Mar 18 2024)
+
+#### 💥 Breaking Change
+
+- Refactor components to use new token structure [#8](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/8) ([@cmarin001](https://github.com/cmarin001))
+
+#### 🚀 Enhancement
+
+- Implement try..catch in props of type function [#7](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/7) ([@cmarin001](https://github.com/cmarin001))
+
+#### 🐛 Bug Fix
+
+- publish updates `Breadcrumbs` package NPM [#6](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/6) ([@Andresbl123](https://github.com/Andresbl123))
+- Adjust dependencies and peerDependencies [#5](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/5) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- correct definition of types [#4](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/4) ([@Andresbl123](https://github.com/Andresbl123))
+
+#### Authors: 3
+
+- Andres ([@Andresbl123](https://github.com/Andresbl123))
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v1.2.2 (Fri Feb 16 2024)
 
 #### 🐛 Bug Fix
