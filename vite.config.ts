@@ -15,11 +15,11 @@ export default defineConfig({
       external: [
         "react",
         "react-dom",
+        "react/jsx-runtime",
+        "react-router-dom",
         "styled-components",
         "@inubekit/hooks",
         "@inubekit/foundations",
-        "react/jsx-runtime",
-        "react-router-dom",
         "@inubekit/stack",
         "@inubekit/text",
       ],

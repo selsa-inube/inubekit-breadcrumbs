@@ -6,23 +6,18 @@ import { inube } from "@inubekit/foundations";
 const StyledContainerLink = styled.li`
   display: inline-block;
   > * {
-    height: 32px;
     > label {
-      color: ${({ theme }) =>
-        theme?.color?.text?.gray?.regular || inube.color.text.gray.regular};
-      cursor: pointer;
-      padding: ${({ theme }) =>
-        `${theme?.spacing?.s100 || inube.spacing.s100} ${
-          theme?.spacing?.s150 || inube.spacing.s150
-        }`};
+      padding: 8px 12px;
     }
   }
 `;
 
 const StyledBreadcrumbMenuLink = styled(Link)`
-  text-decoration: none;
-  color: ${({ theme }) =>
-    theme?.color?.text?.gray?.regular || inube.color.text.gray.regular};
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) =>
+      theme?.palette?.neutral?.N10 || inube.palette.neutral.N10};
+  }
 `;
 
 export { StyledContainerLink, StyledBreadcrumbMenuLink };

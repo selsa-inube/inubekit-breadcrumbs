@@ -1,7 +1,4 @@
-import { inube } from "@inubekit/foundations";
-
-type Sizes = "large" | "medium" | "small";
-type Appearance = keyof typeof inube.color.text;
+type Sizes = "large" | "small";
 
 const parameters = {
   docs: {
@@ -38,4 +35,4 @@ const props = {
 };
 
 export { parameters, props };
-export type { Appearance, Sizes };
+export type { Sizes };

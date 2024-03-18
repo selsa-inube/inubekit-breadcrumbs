@@ -1,6 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import { presente } from "@inubekit/foundations";
 
 import { IBreadcrumbsRoutes } from "../../props";
 import { props } from "../props";
@@ -40,17 +38,5 @@ Default.args = {
   ],
 };
 
-const theme = structuredClone(presente);
-
-const Themed = (args: IBreadcrumbsRoutes) => (
-  <ThemeProvider theme={theme}>
-    <Default {...args} />
-  </ThemeProvider>
-);
-
-Themed.args = {
-  ...Default.args,
-};
-
-export { Default, Themed };
+export { Default };
 export default story;

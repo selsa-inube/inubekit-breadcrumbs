@@ -39,7 +39,7 @@ const Breadcrumbs = (props: IBreadcrumbs) => {
           path={lastCrumb.path}
           id={lastCrumb.path}
           label={capitalizeString(lastCrumb.label)}
-          appearance="dark"
+          active
         />
       </StyledBreadcrumbs>
     );
@@ -53,7 +53,7 @@ const Breadcrumbs = (props: IBreadcrumbs) => {
           path={path}
           id={path}
           label={capitalizeString(label)}
-          appearance={index === crumbs.length - 1 ? "dark" : "gray"}
+          active={index === crumbs.length - 1}
         />
       ))}
     </StyledBreadcrumbs>

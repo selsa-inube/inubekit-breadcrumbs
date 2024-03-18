@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { inube } from "@inubekit/foundations";
 
 const StyledBreadcrumbs = styled.ul`
-  padding: ${({ theme }) => `${theme?.spacing?.s0 || inube.spacing.s0} `};
-  margin: ${({ theme }) => `${theme?.spacing?.s0 || inube.spacing.s0} `};
+  padding: 0;
+  margin: 0;
   & > li {
     display: inline-flex;
   }
@@ -11,10 +11,9 @@ const StyledBreadcrumbs = styled.ul`
   & > div:not(:last-child)::after {
     pointer-events: none;
     content: "/";
-    margin: ${({ theme }) =>
-      `${theme?.spacing?.s0 || inube.spacing.s0} ${
-        theme?.spacing?.s100 || inube.spacing.s100
-      }`};
+    margin: 0 8px;
+    color: ${({ theme }) =>
+      theme?.palette?.neutral?.N300 || inube.palette.neutral.N300};
   }
   & li > p {
     display: inherit;

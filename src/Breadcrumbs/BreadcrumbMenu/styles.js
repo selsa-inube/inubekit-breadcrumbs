@@ -6,25 +6,12 @@ const StyledBreadcrumbMenu = styled.div`
   width: max-content;
   max-width: 160px;
   min-width: 100px;
-  box-shadow: ${({ theme }) =>
-    `${theme?.spacing?.s0 || inube.spacing.s0} 
-     ${theme?.spacing?.s025 || inube.spacing.s025} 
-     ${theme?.spacing?.s050 || inube.spacing.s050} 
-     ${
-       theme?.color?.stroke?.light?.disabled ||
-       inube.color.stroke.light.disabled
-     }`};
+  box-shadow: 0px 2px 4px
+    ${({ theme }) =>
+      theme?.palette?.neutralAlpha?.N40A || inube.palette.neutralAlpha.N40A};
   background-color: ${({ theme }) =>
-    theme?.color?.stroke?.light?.hover || inube.color.stroke.light.hover};
-  border-radius: ${({ theme }) =>
-    `${theme?.spacing?.s050 || inube.spacing.s050}`};
-  a {
-    &:hover {
-      cursor: pointer;
-      background-color: ${({ theme }) =>
-        theme?.color?.surface?.dark?.clear || inube.color.surface.dark.clear};
-    }
-  }
+    theme?.palette?.neutral?.N0 || inube.palette.neutral.N0};
+  border-radius: 4px;
 `;
 
 export { StyledBreadcrumbMenu };
