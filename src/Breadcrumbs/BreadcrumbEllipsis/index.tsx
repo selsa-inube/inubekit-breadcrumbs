@@ -5,7 +5,7 @@ import { BreadcrumbMenu } from "../BreadcrumbMenu";
 
 import { IBreadcrumbsRoutes } from "../props";
 
-import { Size } from "./props";
+import { IBreadcrumbEllipsisSize } from "./props";
 import {
   StyledContainerEllipsis,
   StyledBreadcrumbEllipsis,
@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 interface IBreadcrumbEllipsis extends IBreadcrumbsRoutes {
-  size?: Size;
+  size?: IBreadcrumbEllipsisSize;
 }
 
 const BreadcrumbEllipsis = (props: IBreadcrumbEllipsis) => {

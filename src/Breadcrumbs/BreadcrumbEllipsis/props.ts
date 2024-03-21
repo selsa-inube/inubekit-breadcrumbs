@@ -1,5 +1,5 @@
 const sizes = ["large", "small"] as const;
-type Size = (typeof sizes)[number];
+type IBreadcrumbEllipsisSize = (typeof sizes)[number];
 
 const props = {
   parameters: {
@@ -35,4 +35,4 @@ const props = {
 };
 
 export { props, sizes };
-export type { Size };
+export type { IBreadcrumbEllipsisSize };
