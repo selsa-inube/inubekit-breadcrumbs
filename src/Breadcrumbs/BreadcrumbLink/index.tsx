@@ -1,13 +1,13 @@
 import { Text } from "@inubekit/text";
 import { inube } from "@inubekit/foundations";
-import { IBreadcrumbLinkSizes } from "./props";
+import { IBreadcrumbLinkSize } from "./props";
 import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
 
 interface IBreadcrumbLink {
   label: string;
   path: string;
   id: string;
-  size?: IBreadcrumbLinkSizes;
+  size?: IBreadcrumbLinkSize;
   active?: boolean;
   onClick?: (e: React.MouseEvent) => void;
 }

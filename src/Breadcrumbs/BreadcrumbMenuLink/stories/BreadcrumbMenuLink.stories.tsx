@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { IRoute } from "../../props";
+import { IBreadcrumbsRoute } from "../../props";
 import { props } from "../props";
 import { BreadcrumbMenuLink } from "..";
 
@@ -17,7 +17,7 @@ const story = {
   ],
 };
 
-const Default = (args: IRoute) => <BreadcrumbMenuLink {...args} />;
+const Default = (args: IBreadcrumbsRoute) => <BreadcrumbMenuLink {...args} />;
 Default.args = {
   label: "Privileges",
   path: "/privileges",
