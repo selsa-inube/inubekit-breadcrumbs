@@ -10,7 +10,7 @@
   ],
   "description": "",
   "private": false,
-  "version": "2.0.0",
+  "version": "2.1.0",
   "type": "module",
   "exports": {
     ".": {
@@ -37,7 +37,7 @@
   "dependencies": {
     "@inubekit/foundations": "^2.7.0",
     "@inubekit/hooks": "^1.1.0",
-    "@inubekit/stack": "^2.0.0",
+    "@inubekit/stack": "1.1.0",
     "@inubekit/text": "^2.1.0"
   },
   "peerDependencies": {
