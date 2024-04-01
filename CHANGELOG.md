@@ -1,3 +1,24 @@
+# v2.1.0 (Mon Apr 01 2024)
+
+#### 🚀 Enhancement
+
+- Adjust and export interfaces [#11](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/11) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+#### 📝 Documentation
+
+- Publish new version 2.0.0 [#9](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/9) ([@cmarin001](https://github.com/cmarin001))
+
+#### 🔩 Dependency Updates
+
+- Update inubekit/breadcrumbs to storybook v8 [#10](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/10) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 2
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+
+---
+
 # v2.0.0 (Mon Mar 18 2024)
 
 #### 💥 Breaking Change
