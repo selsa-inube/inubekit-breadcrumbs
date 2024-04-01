@@ -1,16 +1,16 @@
 const sizes = ["large", "small"] as const;
-type Sizes = (typeof sizes)[number];
+type IBreadcrumbsSize = (typeof sizes)[number];
 
-interface IRoute {
+interface IBreadcrumbsRoute {
   path: string;
   label: string;
   id: string;
   isActive?: boolean;
-  size?: Sizes;
+  size?: IBreadcrumbsSize;
 }
 
 interface IBreadcrumbsRoutes {
-  routes: IRoute[];
+  routes: IBreadcrumbsRoute[];
 }
 
 const props = {
@@ -29,4 +29,4 @@ const props = {
 };
 
 export { props, sizes };
-export type { IBreadcrumbsRoutes, IRoute, Sizes };
+export type { IBreadcrumbsRoutes, IBreadcrumbsRoute, IBreadcrumbsSize };

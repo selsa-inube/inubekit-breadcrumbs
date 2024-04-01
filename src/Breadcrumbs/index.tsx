@@ -2,11 +2,11 @@ import { useMediaQuery } from "@inubekit/hooks";
 
 import { BreadcrumbLink } from "./BreadcrumbLink";
 import { BreadcrumbEllipsis } from "./BreadcrumbEllipsis";
-import { IRoute } from "./props";
+import { IBreadcrumbsRoute } from "./props";
 import { StyledBreadcrumbs } from "./styles";
 
 interface IBreadcrumbs {
-  crumbs: IRoute[];
+  crumbs: IBreadcrumbsRoute[];
 }
 
 function capitalizeString(string: string) {

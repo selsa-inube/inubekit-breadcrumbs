@@ -1,9 +1,9 @@
 import { Text } from "@inubekit/text";
 
-import { IRoute } from "../props";
+import { IBreadcrumbsRoute } from "../props";
 import { StyledContainerLink, StyledBreadcrumbMenuLink } from "./styles";
 
-const BreadcrumbMenuLink = (props: IRoute) => {
+const BreadcrumbMenuLink = (props: IBreadcrumbsRoute) => {
   const { label, path, id, size = "large" } = props;
 
   return (

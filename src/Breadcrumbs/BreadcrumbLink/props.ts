@@ -1,4 +1,6 @@
-type Sizes = "large" | "small";
+import { sizes } from "../props";
+
+type IBreadcrumbLinkSize = (typeof sizes)[number];
 
 const parameters = {
   docs: {
@@ -35,4 +37,4 @@ const props = {
 };
 
 export { parameters, props };
-export type { Sizes };
+export type { IBreadcrumbLinkSize };
