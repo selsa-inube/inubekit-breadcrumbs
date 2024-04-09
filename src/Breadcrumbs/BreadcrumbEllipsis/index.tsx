@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-
-import { Text } from "@inubekit/text";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
+import { ITextAppearance, Text } from "@inubekit/text";
 import { BreadcrumbMenu } from "../BreadcrumbMenu";
-
+import { inube } from "@inubekit/foundations";
 import { IBreadcrumbsRoutes } from "../props";
 
 import { IBreadcrumbEllipsisSize } from "./props";
@@ -19,7 +20,7 @@ interface IBreadcrumbEllipsis extends IBreadcrumbsRoutes {
 const BreadcrumbEllipsis = (props: IBreadcrumbEllipsis) => {
   const { size = "large", routes } = props;
   const [showMenu, setShowMenu] = useState(false);
-
+  const theme: typeof inube = useContext(ThemeContext);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   const closeEllipsisMenu = (event: globalThis.MouseEvent) => {
@@ -43,10 +44,18 @@ const BreadcrumbEllipsis = (props: IBreadcrumbEllipsis) => {
     setShowMenu(!showMenu);
   };
 
+  const textAppearance = (theme?.breadcrumbs?.content?.active ||
+    inube.breadcrumbs.content.active) as ITextAppearance;
+
   return (
     <StyledRelativeContainer ref={containerRef} onClick={toggleEllipsisMenu}>
       <StyledContainerEllipsis>
-        <Text type="label" size={size} appearance="dark" textAlign="start">
+        <Text
+          type="label"
+          size={size}
+          appearance={textAppearance}
+          textAlign="start"
+        >
           <StyledBreadcrumbEllipsis>...</StyledBreadcrumbEllipsis>
         </Text>
       </StyledContainerEllipsis>
