@@ -1,7 +1,9 @@
-import { Text } from "@inubekit/text";
+import { ITextAppearance, Text } from "@inubekit/text";
 import { inube } from "@inubekit/foundations";
 import { IBreadcrumbLinkSize } from "./props";
 import { StyledContainerLink, StyledBreadcrumbLink } from "./styles";
+import { useContext } from "react";
+import { ThemeContext } from "styled-components";
 
 interface IBreadcrumbLink {
   label: string;
@@ -14,6 +16,10 @@ interface IBreadcrumbLink {
 
 const BreadcrumbLink = (props: IBreadcrumbLink) => {
   const { label, path, id, size = "large", active = false, onClick } = props;
+  const theme: typeof inube = useContext(ThemeContext);
+
+  const activeTextAppearance = (theme?.breadcrumbs?.content?.active ||
+    inube.breadcrumbs.content.active) as ITextAppearance;
 
   const interceptOnClick = (e: React.MouseEvent) => {
     try {
@@ -33,11 +39,7 @@ const BreadcrumbLink = (props: IBreadcrumbLink) => {
         <Text
           type="label"
           size={size}
-          appearance={
-            active
-              ? (inube.breadcrumbs.content.active as keyof typeof inube.text)
-              : "gray"
-          }
+          appearance={active ? activeTextAppearance : "gray"}
           textAlign="start"
         >
           {label}
