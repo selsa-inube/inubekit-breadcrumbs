@@ -1,3 +1,15 @@
+# v2.2.0 (Tue Apr 09 2024)
+
+#### 🚀 Enhancement
+
+- Refactor component (breadcrumbs) so it uses theme from ThemeContext [#14](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/14) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.1.1 (Fri Apr 05 2024)
 
 #### 🐛 Bug Fix
