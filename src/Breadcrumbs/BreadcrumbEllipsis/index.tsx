@@ -55,6 +55,7 @@ const BreadcrumbEllipsis = (props: IBreadcrumbEllipsis) => {
           size={size}
           appearance={textAppearance}
           textAlign="start"
+          weight="bold"
         >
           <StyledBreadcrumbEllipsis>...</StyledBreadcrumbEllipsis>
         </Text>

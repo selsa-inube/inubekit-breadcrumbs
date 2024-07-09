@@ -15,6 +15,7 @@ const BreadcrumbMenuLink = (props: IBreadcrumbsRoute) => {
           appearance="gray"
           padding="8px 12px"
           textAlign="start"
+          weight="bold"
         >
           {label}
         </Text>
