@@ -41,6 +41,7 @@ const BreadcrumbLink = (props: IBreadcrumbLink) => {
           size={size}
           appearance={active ? activeTextAppearance : "gray"}
           textAlign="start"
+          weight="bold"
         >
           {label}
         </Text>
