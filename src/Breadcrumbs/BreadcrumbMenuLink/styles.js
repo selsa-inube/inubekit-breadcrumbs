@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
 import { inube } from "@inubekit/foundations";
 
 const StyledContainerLink = styled.li`

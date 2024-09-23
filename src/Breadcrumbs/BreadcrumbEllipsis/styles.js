@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { inube } from "@inubekit/foundations";
+import { TextTokens } from "@inubekit/text";
 
 const StyledContainerEllipsis = styled.li`
   display: inline-block;
@@ -10,13 +10,13 @@ const StyledBreadcrumbEllipsis = styled.span`
   text-decoration: none;
   color: ${({ theme }) =>
     theme?.text?.gray?.content?.color?.regular ||
-    inube.text.gray.content.color.regular};
+    TextTokens.gray.content.color.regular};
   &:hover {
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: ${({ theme }) =>
       theme?.text?.gray?.content?.color?.hover ||
-      inube.text.gray.content.color.hover};
+      TextTokens.gray.content.color.hover};
   }
 `;
 

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-import { inube } from "@inubekit/foundations";
+import { TextTokens } from "@inubekit/text";
 
 const StyledContainerLink = styled.li`
   display: inline-block;
@@ -15,9 +14,9 @@ const StyledBreadcrumbLink = styled(Link)`
     text-decoration-color: ${({ theme, $active }) =>
       $active
         ? theme?.text?.dark?.content?.color?.regular ||
-          inube.text.dark.content.color.regular
+          TextTokens.dark.content.color.regular
         : theme?.text?.gray?.content?.color?.regular ||
-          inube.text.gray.content.color.regular};
+          TextTokens.gray.content.color.regular};
   }
 `;
 
