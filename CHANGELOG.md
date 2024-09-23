@@ -1,3 +1,16 @@
+# v2.31.1 (Mon Sep 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/selsa-inube/inubekit-breadcrumbs ([@cmarin001](https://github.com/cmarin001))
+- chore: move breadcrumbs tokens from foundations to component ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.31.0 (Mon Sep 23 2024)
 
 #### 🚀 Enhancement
