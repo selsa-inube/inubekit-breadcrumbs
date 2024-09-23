@@ -1,3 +1,15 @@
+# v2.31.0 (Mon Sep 23 2024)
+
+#### 🚀 Enhancement
+
+- Auto-merge PR [#43](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/43) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v2.30.0 (Tue Sep 03 2024)
 
 #### 🚀 Enhancement
@@ -415,7 +427,7 @@
 #### Authors: 2
 
 - Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- Januar Asprilla ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
 
 ---
 
@@ -439,7 +451,7 @@
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
 - Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
-- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- Januar Asprilla ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
 
 ---
 
@@ -459,7 +471,7 @@
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
 - Andres Babativa (carlos3k11@gmail.com)
-- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- Januar Asprilla ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
 
 ---
 
@@ -485,7 +497,7 @@
 #### Authors: 2
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
-- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- Januar Asprilla ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
 
 ---
 
@@ -493,7 +505,7 @@
 
 #### 🐛 Bug Fix
 
-- implementation of  `<Breadcrumbs />` component [#1](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/1) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- implementation of `<Breadcrumbs />` component [#1](https://github.com/selsa-inube/inubekit-breadcrumbs/pull/1) ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
 
 #### ⚠️ Pushed to `main`
 
@@ -506,7 +518,7 @@
 
 - Andres ([@Andresbl123](https://github.com/Andresbl123))
 - Andres Babativa (carlos3k11@gmail.com)
-- Januar Asprilla  ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
+- Januar Asprilla ([@JanuarAsprilla](https://github.com/JanuarAsprilla))
 
 ---
 
