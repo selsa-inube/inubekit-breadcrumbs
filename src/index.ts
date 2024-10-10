@@ -10,3 +10,4 @@ export type {
   IBreadcrumbsSize,
 } from "./Breadcrumbs/props";
 export type { IBreadcrumbMenu } from "./Breadcrumbs/BreadcrumbMenu";
+export { tokens as BreadcrumbsTokens } from "./Breadcrumbs/Tokens/tokens";
