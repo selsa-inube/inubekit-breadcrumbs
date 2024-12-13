@@ -6,4 +6,4 @@
 
 | token                               | value | reference |
 | ----------------------------------- | ----- | --------- |
-| fondecom.breadcrumbs.content.active |       |           |
+| inube.breadcrumbs.content.active |       |           |
