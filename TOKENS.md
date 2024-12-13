@@ -6,4 +6,4 @@
 
 | token                               | value | reference |
 | ----------------------------------- | ----- | --------- |
-| inube.breadcrumbs.content.active |       |           |
+| inube.breadcrumbs.content.active    |       |           |
